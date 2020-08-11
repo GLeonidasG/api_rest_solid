@@ -1,0 +1,23 @@
+{
+  "name": "api_rest_solid",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.21.2",
+    "nodemon": "^2.0.4",
+    "sqlite3": "^5.0.0",
+    "swagger-ui": "^3.31.1",
+    "uuidv4": "^6.2.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.7",
+    "sucrase": "^3.15.0"
+  }
+}
