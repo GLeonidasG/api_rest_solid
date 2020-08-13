@@ -15,7 +15,7 @@ Este repositório serve para aplicar conhecimentos aprendidos sobre os conceitos
 * Typescript
 * UUIDv4
 * Nodemailer
+* Conexão com banco de dados SQLite
 
 ## o que ainda será adicionado
-* Conexão com banco de dados
 * Documentação OpenAPI com swagger
