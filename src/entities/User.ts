@@ -1,4 +1,4 @@
-import {uuid} from 'uuidv4'
+import { uuid } from 'uuidv4';
 
 export class User {
     public readonly id: string;
@@ -6,15 +6,15 @@ export class User {
     public email: string;
     public password: string;
 
-    constructor(props: Omit<User, "id">, id?: string) {
-        Object.assign(this, props);
+    constructor( props: Omit<User, "id">, id?: string ) {
+        Object.assign( this, props );
         try {
-            if (!id) this.id = uuid();
+            if ( !id ) this.id = uuid();
             else this.id = id;
-        } catch (error) {
-            console.log(error)
-            
+        } catch ( error ) {
+            console.log( error );
+
         }
-        console.log(this.id)
+        console.log( this.id );
     }
 }
