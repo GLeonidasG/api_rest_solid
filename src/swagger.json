@@ -1,0 +1,67 @@
+
+{
+    "openapi": "3.0.1",
+    "info": {
+        "version": "1.0.0",
+        "title": "APIs Document",
+        "description": "your description here",
+        "contact": {
+            "name": "Tran Son hoang",
+            "email": "son.hoang01@gmail.com",
+            "url": "https://hoangtran.co"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "components": {
+      "schemas": {
+        "User": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          }
+        },
+        "Users": {
+          "type": "array",
+          "items":{
+            "$ref": "#/components/schemas/User"
+          }
+        }
+      }
+    },
+    "paths": {
+      "/user":{
+        "post":{
+          "responses": {
+            "201":{
+              "description": "User created",
+              "content": {
+                "application/JSON":{
+                  "schema":{"type": "string", "description": "Response for when user is created"}
+                }
+              }
+            }
+          },
+          "requestBody":{
+            "description": "User info",
+            "content": {
+             "application/JSON" :{
+               "schema":{"$ref":"#/components/schemas/User"}
+             }
+            }
+          }
+      }
+    }
+  }
+
+}
